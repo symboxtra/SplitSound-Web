@@ -11,7 +11,5 @@
 </script>
 
 <style scoped>
-    h1 {
-        color: white;
-    }
+    @import "../assets/css/components.css";
 </style>

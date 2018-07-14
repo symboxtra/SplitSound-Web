@@ -15,17 +15,5 @@
 </script>
 
 <style scoped>
-    h1 {
-        color: white;
-    }
-
-    p {
-        color: white;
-        font-size: 20px;
-    }
-
-    .inner {
-        display: table;
-        margin: 0 auto;
-    }
+    @import "../assets/css/components.css";
 </style>
