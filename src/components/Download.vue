@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Download Component</h1>
+        <h1>Download</h1>
     </div>
 </template>
 
@@ -11,5 +11,7 @@
 </script>
 
 <style scoped>
-
+    h1 {
+        color: white;
+    }
 </style>

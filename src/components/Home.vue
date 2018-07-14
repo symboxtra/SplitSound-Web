@@ -18,11 +18,13 @@
     h1 {
         color: white;
     }
+
     p {
         color: white;
         font-size: 20px;
     }
-    .inner{
+
+    .inner {
         display: table;
         margin: 0 auto;
     }

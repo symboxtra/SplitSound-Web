@@ -1,7 +1,8 @@
 <template>
     <div>
         <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="#" @click="">SplitSound</a>
+            <!--<a class="navbar-brand" href="#" @click="">SplitSound</a>-->
+            <router-link class="navbar-brand" to="home">SplitSound</router-link>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -14,10 +15,12 @@
                         <!--<a class="nav-link" href="#">Learn More</a>-->
                     </li>
                     <li class="navbar-nav ml-auto">
-                        <a href="#" class="nav-link">Download</a>
+                        <!--<a href="#" class="nav-link">Download</a>-->
+                        <router-link to="download" class="nav-link">Download</router-link>
                     </li>
                     <li class="navbar-nav ml-auto">
-                        <a href="#" class="nav-link">About Us</a>
+                        <!--<a href="#" class="nav-link">About Us</a>-->
+                        <router-link to="about-us" class="nav-link">About Us</router-link>
                     </li>
                     <li class="navbar-nav ml-auto">
                         <a href="https://github.com/symboxtra" class="nav-link" target="_blank">Github</a>

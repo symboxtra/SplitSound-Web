@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Karla');
 @import url('https://fonts.googleapis.com/css?family=Oswald');
+
 .main {
     font-family: 'Karla', sans-serif;
     background-image: url("../images/heaphones-cropped-to-mobile.jpg");
@@ -9,16 +10,18 @@
     margin: auto;
     background-size: cover;
 }
+
 @media (min-width: 600px) {
-    .main{
+    .main {
         background-image: url("../images/headphone-pic.jpg");
     }
 }
-.navbar{
-    background-color: rgba(0,0,0,.2) !important;
+
+.navbar {
+    background-color: rgba(0, 0, 0, .2) !important;
 }
 
-.navbar .navbar-nav li a{
+.navbar .navbar-nav li a {
     color: white !important;
     font-size: 20px;
     font-family: "Karla", sans-serif;
