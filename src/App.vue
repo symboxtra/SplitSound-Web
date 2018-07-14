@@ -1,60 +1,37 @@
 <template>
     <div class="main">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="#">Symboxtra Software</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item ml-auto">
-                        <a class="nav-link" href="#">Learn More</a>
-                    </li>
-                    <li class="navbar-nav ml-auto">
-                        <a href="#" class="nav-link">Download</a>
-                    </li>
-                    <li class="navbar-nav ml-auto">
-                        <a href="#" class="nav-link">About Us</a>
-                    </li>
-                    <li class="navbar-nav ml-auto">
-                        <a href="#" class="nav-link">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <navbar></navbar>
+        <div class="content">
+            <home></home>
+        </div>
     </div>
 </template>
 
 <script>
-
-</script>
-
-<style scoped>
-    @import url('https://fonts.googleapis.com/css?family=Karla');
-    @import url('https://fonts.googleapis.com/css?family=Oswald');
-    .main {
-        font-family: 'Karla', sans-serif;
-        background-image: url("assets/heaphones-cropped-to-mobile.jpg");
-        min-height: 100vh;
-        height: 100%;
-        width: 100%;
-        margin: auto;
-        background-size: cover;
-    }
-    @media (min-width: 600px) {
-        .main{
-            background-image: url("assets/headphone-pic.jpg");
+    import Navbar from './components/Navbar'
+    import Home from './components/Home'
+    export default {
+        components: {
+            'navbar': Navbar,
+            'home': Home
         }
     }
-    .navbar{
-        background-color: rgba(0,0,0,.2) !important;
-    }
+</script>
 
-    .navbar .navbar-nav li a{
-        color: white !important;
-        font-size: 20px;
-        font-family: "Karla", sans-serif;
+<style>
+    @import "assets/css/main.css";
+    .content {
+        width: fit-content;
+        height: fit-content;
+
+        position:absolute; /*it can be fixed too*/
+        left:0; right:0;
+        top:0; bottom:0;
+        margin:auto;
+
+        /*this to solve "the content will not be cut when the window is smaller than the content": */
+        max-width:100%;
+        max-height:100%;
+        overflow:auto;
     }
 </style>
