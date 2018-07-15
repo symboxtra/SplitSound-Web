@@ -42,30 +42,30 @@
     overflow: auto;
 }
 
-.router-animation-enter-active{
-    animation: fadeInRight 1s;
-    animation-delay: .1s;
-    opacity: 0;
-}
-.router-animation-leave-active{
-    animation: fadeOutLeft 1s;
-}
-@keyframes going {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-50px);
-        opacity: 0;
-    }
-}
-@keyframes coming {
-    from {
-        transform: translateX(-50px);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0px);
-        opacity: 1;
-    }
-}
+/*.router-animation-enter-active{*/
+    /*animation: fadeInRight 1s;*/
+    /*animation-delay: .1s;*/
+    /*opacity: 0;*/
+/*}*/
+/*.router-animation-leave-active{*/
+    /*animation: fadeOutLeft 1s;*/
+/*}*/
+/*@keyframes going {*/
+    /*from {*/
+        /*transform: translateX(0);*/
+    /*}*/
+    /*to {*/
+        /*transform: translateX(-50px);*/
+        /*opacity: 0;*/
+    /*}*/
+/*}*/
+/*@keyframes coming {*/
+    /*from {*/
+        /*transform: translateX(-50px);*/
+        /*opacity: 0;*/
+    /*}*/
+    /*to {*/
+        /*transform: translateX(0px);*/
+        /*opacity: 1;*/
+    /*}*/
+/*}*/
