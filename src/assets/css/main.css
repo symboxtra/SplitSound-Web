@@ -18,15 +18,20 @@
 }
 
 .navbar {
-    background-color: rgba(0, 0, 0, .2) !important;
+    background-color: rgba(0, 0, 0, .8) !important;
+    margin: 0 !important;
 }
 
 .navbar .navbar-nav li a {
     color: #D44500 !important;
     font-size: 20px;
     font-family: "Karla", sans-serif;
+    background-color: transparent !important;
 }
 
+#navbarSupportedContent.navbar-collapse{
+    background-color: black;
+}
 
 .content {
     width: inherit;
