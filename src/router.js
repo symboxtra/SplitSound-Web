@@ -26,5 +26,8 @@ export default new Router({
             path: '/about-us',
             component: AboutUs
         },
+        {
+            path: '*', component: Home
+        }
     ]
 })

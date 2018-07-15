@@ -1,6 +1,8 @@
 <template>
-    <div>
-        <h1>Download</h1>
+    <div class="content">
+        <div class="inner">
+            <h1>Download</h1>
+        </div>
     </div>
 </template>
 
