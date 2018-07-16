@@ -1,13 +1,15 @@
 <template>
-    <div class="main">
-        <div class="content">
-            <transition :name="routerAnimation" :enter-active-class="enterAnimation"
-                        :leave-active-class="exitAnimation">
-                <router-view>
-                </router-view>
-            </transition>
+    <div>
+        <div class="main">
+            <navbar></navbar>
+            <div class="content">
+                <transition :name="routerAnimation" :enter-active-class="enterAnimation"
+                            :leave-active-class="exitAnimation">
+                    <router-view>
+                    </router-view>
+                </transition>
+            </div>
         </div>
-        <navbar></navbar>
     </div>
 </template>
 
@@ -28,28 +30,28 @@
             'home': Home
         },
         watch: {
-            '$route'(to, from){
+            '$route'(to, from) {
                 let toNum = this.translatePathToNumber(to.path);
                 let fromNum = this.translatePathToNumber(from.path);
-                if(toNum > fromNum){
+                if (toNum > fromNum) {
                     this.enterAnimation = 'animated fadeInRight';
                     this.exitAnimation = 'animated fadeOutLeft';
                 }
-                else if( fromNum > toNum){
+                else if (fromNum > toNum) {
                     this.enterAnimation = 'animated fadeInLeft';
                     this.exitAnimation = 'animated fadeOutRight';
                 }
-                else{
+                else {
                     console.error("Path went to itself, something is wrong");
                 }
             }
         },
         methods: {
-            translatePathToNumber(path){
+            translatePathToNumber(path) {
                 //removes the first character because it is always the same
                 let modedPath = path.substring(1);
                 //assigns the path to a number based on where
-                switch(modedPath){
+                switch (modedPath) {
                     case 'home':
                         return 0;
                     case 'learn-more':
