@@ -15,6 +15,9 @@
     .main {
         background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("../images/headphone-pic.jpg");
     }
+    .content{
+        overflow: hidden;
+    }
 }
 
 .navbar {
@@ -34,8 +37,7 @@
 }
 
 .content {
-    width: inherit;
-    height: 60%;
+    height: 50%;
     text-align: center;
     margin: auto;
     position: absolute;
@@ -43,7 +45,7 @@
     left: 0;
     bottom: 0;
     right: 0;
-    overflow: hidden;
+
 }
 
 /*.router-animation-enter-active{*/

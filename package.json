@@ -30,5 +30,17 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "main": "vue.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/symboxtra/SplitSound-Web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/symboxtra/SplitSound-Web/issues"
+  },
+  "homepage": "https://github.com/symboxtra/SplitSound-Web#readme",
+  "description": ""
 }
