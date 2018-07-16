@@ -1,31 +1,74 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div>
+        <div class="main">
+            <navbar></navbar>
+            <div class="content">
+                <transition :name="routerAnimation" :enter-active-class="enterAnimation"
+                            :leave-active-class="exitAnimation">
+                    <router-view>
+                    </router-view>
+                </transition>
+            </div>
+        </div>
     </div>
-    <router-view/>
-  </div>
 </template>
 
+<script>
+    import Navbar from './components/Navbar'
+    import Home from './components/Home'
+
+    export default {
+        data() {
+            return {
+                routerAnimation: 'routerAnimation',
+                enterAnimation: 'animated fadeInRight',
+                exitAnimation: 'animated fadeOutLeft'
+            }
+        },
+        components: {
+            'navbar': Navbar,
+            'home': Home
+        },
+        watch: {
+            '$route'(to, from) {
+                let toNum = this.translatePathToNumber(to.path);
+                let fromNum = this.translatePathToNumber(from.path);
+                if (toNum > fromNum) {
+                    this.enterAnimation = 'animated fadeInRight';
+                    this.exitAnimation = 'animated fadeOutLeft';
+                }
+                else if (fromNum > toNum) {
+                    this.enterAnimation = 'animated fadeInLeft';
+                    this.exitAnimation = 'animated fadeOutRight';
+                }
+                else {
+                    console.error("Path went to itself, something is wrong");
+                }
+            }
+        },
+        methods: {
+            translatePathToNumber(path) {
+                //removes the first character because it is always the same
+                let modedPath = path.substring(1);
+                //assigns the path to a number based on where
+                switch (modedPath) {
+                    case 'home':
+                        return 0;
+                    case 'learn-more':
+                        return 1;
+                    case 'download':
+                        return 2;
+                    case 'about-us':
+                        return 3;
+                    default:
+                        console.error("INVALID ROUTE YOU FUCKED SOMETHING UP");
+                        return;
+                }
+            }
+        }
+    }
+</script>
+
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+    @import "assets/css/main.css";
 </style>
