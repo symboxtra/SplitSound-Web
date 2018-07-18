@@ -1,14 +1,14 @@
 <template>
     <div>
         <div class="main">
-            <navbar> </navbar>
-                <div class="content">
-                    <transition :name="routerAnimation" :enter-active-class="enterAnimation"
-                                :leave-active-class="exitAnimation">
-                        <router-view>
-                        </router-view>
-                    </transition>
-                </div>
+            <navbar></navbar>
+            <div class="content">
+                <transition :name="routerAnimation" :enter-active-class="enterAnimation"
+                            :leave-active-class="exitAnimation">
+                    <router-view>
+                    </router-view>
+                </transition>
+            </div>
         </div>
     </div>
 </template>
@@ -31,6 +31,7 @@
         },
         watch: {
             '$route'(to, from) {
+                //function changes the path depending on where the current view is at the time
                 let toNum = this.translatePathToNumber(to.path);
                 let fromNum = this.translatePathToNumber(from.path);
                 if (toNum > fromNum) {
