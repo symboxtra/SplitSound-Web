@@ -2,8 +2,8 @@
     <div>
         <navbar></navbar>
         <div class="main">
-            <transition :name="routerAnimation" :enter-active-class="enterAnimation"
-                        :leave-active-class="exitAnimation">
+            <transition name="routerAnimation" :enter-active-class="enterAnimation"
+                        :leave-active-class="exitAnimation" mode="out-in">
                 <router-view>
                 </router-view>
             </transition>

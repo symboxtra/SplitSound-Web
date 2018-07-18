@@ -1,6 +1,6 @@
 <template>
     <div class="content">
-        <h1>Download</h1>
+        <h1 class="center">Download</h1>
     </div>
 </template>
 
