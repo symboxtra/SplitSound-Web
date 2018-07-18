@@ -13,6 +13,7 @@
     width: 100%;
     position: absolute;
     overflow: hidden;
+    padding-top: 4%;
 }
 
 .navbar {
@@ -26,7 +27,7 @@
 }
 
 .content {
-    height: 50%;
+    height: 30%;
     text-align: center;
     margin: auto;
     position: absolute;

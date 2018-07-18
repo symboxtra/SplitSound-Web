@@ -1,14 +1,12 @@
 <template>
     <div>
+        <navbar></navbar>
         <div class="main">
-            <navbar></navbar>
-            <div class="content">
-                <transition :name="routerAnimation" :enter-active-class="enterAnimation"
-                            :leave-active-class="exitAnimation">
-                    <router-view>
-                    </router-view>
-                </transition>
-            </div>
+            <transition :name="routerAnimation" :enter-active-class="enterAnimation"
+                        :leave-active-class="exitAnimation">
+                <router-view>
+                </router-view>
+            </transition>
         </div>
     </div>
 </template>

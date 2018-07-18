@@ -1,8 +1,6 @@
 <template>
     <div class="content">
-        <div class="inner">
-            <h1>About Us!</h1>
-        </div>
+        <h1>About Us!</h1>
     </div>
 </template>
 

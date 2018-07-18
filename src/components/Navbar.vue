@@ -1,6 +1,6 @@
 <template>
     <div>
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
             <!--<a class="navbar-brand" href="#" @click="">SplitSound</a>-->
             <router-link class="navbar-brand" to="home">SplitSound</router-link>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
