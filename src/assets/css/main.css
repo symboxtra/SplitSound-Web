@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Karla');
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
-:root{
+:root {
     --fonts: 'Karla', sans-serif;
 }
 
 .main {
     font-family: var(--fonts);
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("../images/headphone-pic.jpg") no-repeat center center fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/headphone-pic.jpg") no-repeat center center fixed;
     background-size: cover;
     height: 100%;
     width: 100%;
