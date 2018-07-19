@@ -22,7 +22,7 @@
     margin-bottom: 13px;
 }
 .footerElement{
-    color: #D44500;
+    color: var(--splitSoundOrange) ;
     font-size: 16px;
     font-family: var(--fonts);
     padding: 0;

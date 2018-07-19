@@ -3,6 +3,7 @@
 
 :root {
     --fonts: 'Karla', sans-serif;
+    --splitSoundOrange:  #D44500;
 }
 
 .main {
@@ -21,7 +22,7 @@
 }
 
 .navbar .navbar-nav li a {
-    color: #D44500 !important;
+    color: var(--splitSoundOrange) !important;
     font-size: 20px !important;
     font-family: var(--fonts);;
 }
