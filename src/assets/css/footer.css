@@ -1,0 +1,30 @@
+.flexWrapper{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 40px 20px;
+}
+.flexWrapper > div{
+    background-color: transparent;
+}
+.footer {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    bottom: 0;
+    height: fit-content;
+}
+.footerHead{
+    color: white;
+    font-size: 20px;
+    font-family: var(--fonts);
+    margin-bottom: 13px;
+}
+.footerElement{
+    color: #D44500;
+    font-size: 16px;
+    font-family: var(--fonts);
+    padding: 0;
+    margin: 0;
+}

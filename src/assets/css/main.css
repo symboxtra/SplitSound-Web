@@ -11,9 +11,9 @@
     background-size: cover;
     height: 100%;
     width: 100%;
-    position: absolute;
-    overflow: hidden;
+    position: relative;
     padding-top: 4%;
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -24,22 +24,4 @@
     color: #D44500 !important;
     font-size: 20px !important;
     font-family: var(--fonts);;
-}
-
-.content {
-    /*height: 30%;*/
-    /*text-align: center;*/
-    /*margin: auto;*/
-    /*position: absolute;*/
-    /*top: 0;*/
-    /*left: 0;*/
-    /*bottom: 0;*/
-    /*right: 0;*/
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    height: 100vh;
-    text-align: center;
-}
-.center{
-    grid-row: 2/3;
 }

@@ -2,11 +2,12 @@
     <div>
         <navbar></navbar>
         <div class="main">
-            <transition name="routerAnimation" :enter-active-class="enterAnimation"
+            <transition appear name="routerAnimation" :enter-active-class="enterAnimation"
                         :leave-active-class="exitAnimation" mode="out-in" :duration="{ enter: 1000, leave: 300 }">
                 <router-view>
                 </router-view>
             </transition>
+            <footerComp></footerComp>
         </div>
     </div>
 </template>
@@ -14,18 +15,19 @@
 <script>
     import Navbar from './components/Navbar'
     import Home from './components/Home'
+    import Footer from './components/Footer'
 
     export default {
         data() {
             return {
-                routerAnimation: 'routerAnimation',
                 enterAnimation: 'animated fadeInRight',
                 exitAnimation: 'animated fadeOutLeft'
             }
         },
         components: {
             'navbar': Navbar,
-            'home': Home
+            'home': Home,
+            'footerComp': Footer
         },
         watch: {
             '$route'(to, from) {
