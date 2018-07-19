@@ -1,0 +1,99 @@
+@media (min-width: 300px) {
+    .gridWrapper {
+        display: grid;
+        grid-template-rows: 1fr repeat(3, 2fr) 1fr;
+        justify-items: center;
+    }
+
+    .introText {
+        text-align: center;
+        margin-top: 10%;
+    }
+
+    .tallPic1 {
+        max-height: 100%;
+        max-width: 100%;
+        padding: 5%;
+    }
+
+    .tallPic2 {
+        max-height: 100%;
+        max-width: 100%;
+        padding: 5%;
+    }
+    .tallPic3 {
+        max-height: 100%;
+        max-width: 100%;
+        padding: 5%;
+    }
+    .widePic {
+        max-height: 100%;
+        max-width: 100%;
+        padding: 2%;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 700px) {
+    .gridWrapper {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        justify-items: center;
+        height: 100vh;
+    }
+
+    .introText {
+        grid-column: 3/9;
+        grid-row: 1;
+        text-align: center;
+        margin-top: 4%;
+    }
+
+    .tallPic1 {
+        grid-row: 2;
+        grid-column: 3/5;
+        max-height: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .tallPic2 {
+        grid-row: 2;
+        grid-column: 5/7;
+        max-height: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .tallPic3 {
+        grid-row: 2;
+        grid-column: 7/9;
+        max-height: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .widePic {
+        grid-row: 3;
+        grid-column: 4/8;
+        max-height: 100%;
+        max-width: 100%;
+        padding: 2%;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
