@@ -3,7 +3,7 @@
         <navbar></navbar>
         <div class="main">
             <transition name="routerAnimation" :enter-active-class="enterAnimation"
-                        :leave-active-class="exitAnimation" mode="out-in">
+                        :leave-active-class="exitAnimation" mode="out-in" :duration="{ enter: 1000, leave: 300 }">
                 <router-view>
                 </router-view>
             </transition>
@@ -33,12 +33,12 @@
                 let toNum = this.translatePathToNumber(to.path);
                 let fromNum = this.translatePathToNumber(from.path);
                 if (toNum > fromNum) {
-                    this.enterAnimation = 'animated fadeInRight';
-                    this.exitAnimation = 'animated fadeOutLeft';
+                    this.enterAnimation = 'animated slideInRight';
+                    this.exitAnimation = 'animated slideOutLeft';
                 }
                 else if (fromNum > toNum) {
-                    this.enterAnimation = 'animated fadeInLeft';
-                    this.exitAnimation = 'animated fadeOutRight';
+                    this.enterAnimation = 'animated slideInLeft';
+                    this.exitAnimation = 'animated slideOutRight';
                 }
                 else {
                     console.error("Path went to itself, something is wrong");
