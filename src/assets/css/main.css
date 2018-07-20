@@ -1,75 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Karla');
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
-.main {
-    font-family: 'Karla', sans-serif;
-    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("../images/heaphones-cropped-to-mobile.jpg");
-    min-height: 100vh;
-    height: 100%;
-    width: 100%;
-    margin: auto;
-    background-size: cover;
+:root {
+    --fonts: 'Karla', sans-serif;
+    --splitSoundOrange:  #D44500;
 }
 
-@media (min-width: 600px) {
-    .main {
-        background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("../images/headphone-pic.jpg");
-    }
+.main {
+    font-family: var(--fonts);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/headphone-pic.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding-top: 4%;
+    overflow-x: hidden;
 }
 
 .navbar {
-    background-color: rgba(0, 0, 0, .8) !important;
-    margin: 0 !important;
-}
-
-.navbar .navbar-nav li a {
-    color: #D44500 !important;
-    font-size: 20px;
-    font-family: "Karla", sans-serif;
-    background-color: transparent !important;
-}
-
-#navbarSupportedContent.navbar-collapse{
     background-color: black;
 }
 
-.content {
-    width: inherit;
-    height: 60%;
-    text-align: center;
-    margin: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    overflow: hidden;
+.navbar .navbar-nav li a {
+    color: var(--splitSoundOrange) !important;
+    font-size: 20px !important;
+    font-family: var(--fonts);;
 }
-
-/*.router-animation-enter-active{*/
-    /*animation: fadeInRight 1s;*/
-    /*animation-delay: .1s;*/
-    /*opacity: 0;*/
-/*}*/
-/*.router-animation-leave-active{*/
-    /*animation: fadeOutLeft 1s;*/
-/*}*/
-/*@keyframes going {*/
-    /*from {*/
-        /*transform: translateX(0);*/
-    /*}*/
-    /*to {*/
-        /*transform: translateX(-50px);*/
-        /*opacity: 0;*/
-    /*}*/
-/*}*/
-/*@keyframes coming {*/
-    /*from {*/
-        /*transform: translateX(-50px);*/
-        /*opacity: 0;*/
-    /*}*/
-    /*to {*/
-        /*transform: translateX(0px);*/
-        /*opacity: 1;*/
-    /*}*/
-/*}*/

@@ -1,0 +1,107 @@
+@media (min-width: 300px) {
+    .gridWrapper {
+        display: grid;
+        grid-template-rows: 1fr repeat(3, 2fr) 1fr;
+        justify-items: center;
+    }
+
+    .introText {
+        text-align: center;
+        margin-top: 10%;
+    }
+
+    .tallPic1 {
+        max-height: 100%;
+        max-width: 100%;
+        padding: 5%;
+    }
+
+    .tallPic2 {
+        max-height: 100%;
+        max-width: 100%;
+        padding: 5%;
+    }
+
+    .tallPic3 {
+        max-height: 100%;
+        max-width: 100%;
+        padding: 5%;
+    }
+
+    .widePic1 {
+        max-height: 100%;
+        max-width: 100%;
+        padding: 2%;
+    }
+
+    .widePic2 {
+        max-height: 100%;
+        max-width: 100%;
+        padding: 2%;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 900px) {
+    .gridWrapper {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        height: 100vh;
+        grid-template-areas: "it it it it it it" "tp1 tp1 tp2 tp2 tp3 tp3" "wp1 wp1 wp1 wp2 wp2 wp2";
+    }
+
+    .introText {
+        grid-area: it;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .tallPic1 {
+        grid-area: tp1;
+        padding: 0;
+    }
+
+    .tallPic2 {
+        grid-area: tp2;
+        padding: 0;
+    }
+
+    .tallPic3 {
+        grid-area: tp3;
+        padding: 0;
+    }
+
+    .widePic1 {
+        grid-area: wp1;
+        padding: 2%;
+    }
+
+    .widePic2 {
+        grid-area: wp2;
+        padding: 2%;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .gridWrapper {
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: ". . it it it it it it . ." ". . tp1 tp1 tp2 tp2 tp3 tp3 . ." ". . wp1 wp1 wp1 wp2 wp2 wp2 . .";
+    }
+
+}
