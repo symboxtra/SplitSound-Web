@@ -1,0 +1,42 @@
+.gridWrapper2 {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr repeat(4, 2fr) 1fr;
+    height: 100vh;
+    text-align: center;
+    grid-gap: 20px;
+    grid-template-areas: ". ds ds ds ds ." ". de1 de2 de3 de4 ."
+}
+
+.downloadSection {
+    grid-area: ds;
+}
+
+.gridWrapper2 > div {
+    border-radius: 25px;
+    height: 80%;
+}
+
+.downloadElement1 {
+    grid-area: de1;
+}
+
+.downloadElement2 {
+    grid-area: de2;
+}
+
+.downloadElement3 {
+    grid-area: de3;
+}
+
+.downloadElement4 {
+    grid-area: de4;
+}
+
+.btn-main {
+    font-size: 40px;
+}
+
+p {
+    font-size: 28px;
+}
