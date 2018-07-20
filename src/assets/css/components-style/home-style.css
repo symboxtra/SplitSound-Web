@@ -21,19 +21,27 @@
         max-width: 100%;
         padding: 5%;
     }
+
     .tallPic3 {
         max-height: 100%;
         max-width: 100%;
         padding: 5%;
     }
-    .widePic {
+
+    .widePic1 {
+        max-height: 100%;
+        max-width: 100%;
+        padding: 2%;
+    }
+
+    .widePic2 {
         max-height: 100%;
         max-width: 100%;
         padding: 2%;
     }
 
     h1 {
-        font-size: 40px;
+        font-size: 50px;
     }
 
     p {
@@ -41,51 +49,42 @@
     }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
     .gridWrapper {
-        display: grid;
-        grid-template-columns: repeat(10, 1fr);
+        grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        justify-items: center;
         height: 100vh;
+        grid-template-areas: "it it it it it it" "tp1 tp1 tp2 tp2 tp3 tp3" "wp1 wp1 wp1 wp2 wp2 wp2";
     }
 
     .introText {
-        grid-column: 3/9;
-        grid-row: 1;
+        grid-area: it;
         text-align: center;
         margin-top: 0;
     }
 
     .tallPic1 {
-        grid-row: 2;
-        grid-column: 3/5;
-        max-height: 100%;
-        max-width: 100%;
+        grid-area: tp1;
         padding: 0;
     }
 
     .tallPic2 {
-        grid-row: 2;
-        grid-column: 5/7;
-        max-height: 100%;
-        max-width: 100%;
+        grid-area: tp2;
         padding: 0;
     }
 
     .tallPic3 {
-        grid-row: 2;
-        grid-column: 7/9;
-        max-height: 100%;
-        max-width: 100%;
+        grid-area: tp3;
         padding: 0;
     }
 
-    .widePic {
-        grid-row: 3;
-        grid-column: 4/8;
-        max-height: 100%;
-        max-width: 100%;
+    .widePic1 {
+        grid-area: wp1;
+        padding: 2%;
+    }
+
+    .widePic2 {
+        grid-area: wp2;
         padding: 2%;
     }
 
@@ -96,4 +95,13 @@
     p {
         font-size: 20px;
     }
+}
+
+@media (min-width: 1400px) {
+    .gridWrapper {
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: ". . it it it it it it . ." ". . tp1 tp1 tp2 tp2 tp3 tp3 . ." ". . wp1 wp1 wp1 wp2 wp2 wp2 . .";
+    }
+
 }
