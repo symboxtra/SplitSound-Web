@@ -1,9 +1,13 @@
 <template>
-    <div :class="{ android: OSName === 'Android', ios: OSName === 'iOS', linux: OSName === 'Linux', mac: OSName === 'Mac OS', windows: OSName === 'Windows'}">
-        <div><h1>{{ OSName }}</h1>
-            <button class="btn btn-dark">Download</button>
+    <div :class="{ android: OSName === 'Android', ios: OSName === 'iOS', linux: OSName === 'Linux', mac: OSName === 'Mac', windows: OSName === 'Windows'}">
+        <div>
+            <h1>{{ OSName }}</h1>
+            <button class="btn btn-dark btn-el">Download</button>
         </div>
-        <img src="../assets/images/example2.png" alt="Desktop PlaceHolder" v-if="isDesktop">
+        <img class="dImg" src="../assets/images/example2.png" alt="Desktop PlaceHolder"
+             v-if="OSName === 'Linux' || OSName === 'Mac'|| OSName === 'Windows'">
+        <img class="mImg" src="../assets/images/example1.jpg" alt="Mobile PlaceHolder"
+             v-else-if="OSName === 'Android' || OSName === 'iOS'">
     </div>
 </template>
 
@@ -16,11 +20,7 @@
                 return this.osname;
             }
         },
-        methods:{
-            isDesktop(){
-                return (this.OSName() === 'Linux' | this.OSName() === 'Mac OS'| this.OSName() === 'Windows');
-            }
-        }
+        methods: {}
     }
 </script>
 
@@ -29,10 +29,16 @@
         font-size: 25px;
     }
 
-    img {
+    .dImg {
         padding-top: 5%;
         max-width: 70%;
         max-height: 70%;
+    }
+
+    .mImg {
+        padding-top: 5%;
+        max-width: 70%;
+        max-height: 55%;
     }
 
     .android {
@@ -46,7 +52,7 @@
     }
 
     .linux {
-        background-color: #FFFF00;
+        background-color: #DAA520;
         /*could not find one for linux*/
     }
 
@@ -56,7 +62,7 @@
     }
 
     .windows {
-        background-color: #2D89Ef;
+        background-color: #2D89EF;
         /*Windows 10 blue*/
     }
 </style>

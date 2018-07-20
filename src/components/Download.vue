@@ -31,7 +31,7 @@
                 return this.getOS();
             },
             RenderedOSs() {
-                let osa = ['Windows','Mac OS','Linux','Android','iOS'];
+                let osa = ['Windows','Mac','Linux','Android','iOS'];
                 let i = osa.indexOf(this.getOS());
                 if (i !== -1) {
                     osa.splice(i, 1);
