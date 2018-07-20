@@ -5,6 +5,7 @@
         text-align: center;
         justify-items: center;
         grid-column-gap: 20px;
+        grid-row-gap: 20px;
         margin-top: 10%;
     }
 
@@ -44,6 +45,7 @@
     .gridWrapper3 {
         grid-template-rows: 1fr 5fr 5fr;
         grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 0;
         margin-top: 0;
         grid-template-areas: "mt mt mt" "u0 u1 u2" "u3 u4 u5"
     }
