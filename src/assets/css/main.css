@@ -8,7 +8,6 @@
 
 .main {
     font-family: var(--fonts);
-    /*background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/headphone-pic.jpg") no-repeat center center fixed;*/
     background: linear-gradient(black, #303030, black);
     background-size: cover;
     height: 100%;
