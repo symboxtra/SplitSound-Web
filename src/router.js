@@ -2,7 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 
 import Home from '@/components/Home'
-import LearnMore from '@/components/LearnMore'
+import Features from '@/components/Features'
 import Download from '@/components/Download'
 import AboutUs from '@/components/AboutUs'
 
@@ -15,8 +15,8 @@ export default new Router({
             component: Home
         },
         {
-            path: '/learn-more',
-            component: LearnMore
+            path: '/features',
+            component: Features
         },
         {
             path: '/download',

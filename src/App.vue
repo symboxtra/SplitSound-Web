@@ -55,7 +55,7 @@
                 switch (modedPath) {
                     case 'home':
                         return 0;
-                    case 'learn-more':
+                    case 'features':
                         return 1;
                     case 'download':
                         return 2;

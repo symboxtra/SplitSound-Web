@@ -11,7 +11,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item ml-auto">
-                        <router-link to="learn-more" class="nav-link">Learn More</router-link>
+                        <router-link to="features" class="nav-link">Features</router-link>
                         <!--<a class="nav-link" href="#">Learn More</a>-->
                     </li>
                     <li class="navbar-nav ml-auto">

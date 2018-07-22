@@ -20,6 +20,5 @@
 </script>
 
 <style scoped>
-    @import "../assets/css/components.css";
     @import "../assets/css/components-style/home-style.css";
 </style>

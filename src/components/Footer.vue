@@ -1,6 +1,7 @@
 <template>
     <div>
         <footer class="footer">
+            <hr>
             <div class="flexWrapper">
                 <div>
                     <h3 class="footerHead">Fake Links</h3>
