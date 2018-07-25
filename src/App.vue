@@ -3,7 +3,7 @@
         <navbar></navbar>
         <div class="main">
             <transition appear name="routerAnimation" :enter-active-class="enterAnimation"
-                        :leave-active-class="exitAnimation" mode="out-in" :duration="{ enter: 1000, leave: 700 }">
+                        :leave-active-class="exitAnimation" mode="out-in" :duration="{ enter: 900, leave: 500 }">
                 <router-view>
                 </router-view>
             </transition>
