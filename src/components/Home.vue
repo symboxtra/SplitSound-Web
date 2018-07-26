@@ -19,40 +19,12 @@
                 <img src="../assets/images/example2.png" alt="Desktop PlaceHolder" class="responsiveDImg responsiveImg">
             </v-carousel-item>
         </v-carousel>
-        <!--<b-carousel-->
-        <!--class="carousel"-->
-        <!--controls-->
-        <!--indicators-->
-        <!--background="transparent"-->
-        <!--:interval="4000"-->
-        <!--img-width="1024"-->
-        <!--img-height="480">-->
-        <!--<b-carousel-slide-->
-        <!--:img-src="require('../assets/images/example1.jpg')">-->
-        <!--&gt;-->
-        <!--</b-carousel-slide>-->
-        <!--<b-carousel-slide-->
-        <!--:img-src="require('../assets/images/example1.jpg')">-->
-        <!--&gt;-->
-        <!--</b-carousel-slide>-->
-        <!--<b-carousel-slide-->
-        <!--:img-src="require('../assets/images/example1.jpg')">-->
-        <!--&gt;-->
-        <!--</b-carousel-slide>-->
-        <!--<b-carousel-slide-->
-        <!--:img-src="require('../assets/images/example2.png')">-->
-        <!--</b-carousel-slide>-->
-        <!--<b-carousel-slide-->
-        <!--:img-src="require('../assets/images/example2.png')">-->
-        <!--</b-carousel-slide>-->
-        <!--</b-carousel>-->
     </div>
 </template>
 
 <script>
     export default {
         name: "Home",
-        props: []
     }
 </script>
 

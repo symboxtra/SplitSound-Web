@@ -2,8 +2,9 @@
     <div id="app">
         <navbar></navbar>
         <div class="main">
-            <transition appear name="routerAnimation" :enter-active-class="enterAnimation"
-                        :leave-active-class="exitAnimation" mode="out-in" :duration="{ enter: 900, leave: 400 }">
+            <!--<transition appear name="routerAnimation" :enter-active-class="enterAnimation"-->
+            <!--:leave-active-class="exitAnimation" mode="out-in">-->
+            <transition :name="animationName">
                 <router-view>
                 </router-view>
             </transition>
@@ -16,11 +17,11 @@
     import Navbar from './components/Navbar'
     import Home from './components/Home'
     import Footer from './components/Footer'
+
     export default {
         data() {
             return {
-                enterAnimation: 'animated fadeInRight',
-                exitAnimation: 'animated fadeOutLeft'
+                animationName: 'slide0'
             }
         },
         components: {
@@ -34,12 +35,10 @@
                 let toNum = this.translatePathToNumber(to.path);
                 let fromNum = this.translatePathToNumber(from.path);
                 if (toNum > fromNum) {
-                    this.enterAnimation = 'animated slideInRight';
-                    this.exitAnimation = 'animated slideOutLeft';
+                    this.animationName = 'slide0';
                 }
                 else if (fromNum > toNum) {
-                    this.enterAnimation = 'animated slideInLeft';
-                    this.exitAnimation = 'animated slideOutRight';
+                    this.animationName = 'slide1';
                 }
                 else {
                     console.error("Path went to itself, something is wrong");
