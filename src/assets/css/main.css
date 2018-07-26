@@ -18,7 +18,7 @@
 }
 
 .navbar {
-    background-color: black;
+    background: black;
     margin: 0 !important;
     padding-bottom: 0 !important;
 }
@@ -26,5 +26,6 @@
 .navbar .navbar-nav > li > a {
     color: var(--splitSoundOrange) !important;
     font-size: 20px !important;
+    width: fit-content;
     font-family: var(--fonts);
 }

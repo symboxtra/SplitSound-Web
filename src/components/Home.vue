@@ -5,11 +5,11 @@
             <p> For when you do not want to run a 200 foot audio cable throughout your house.</p>
             <p> A free alternative to wireless bluetooth wifi 2.4 ghz headphones.</p>
         </div>
-        <img src="../assets/images/example1.jpg" alt="Mobile PlaceHolder" class="tallPic1">
-        <img src="../assets/images/example1.jpg" alt="Mobile PlaceHolder" class="tallPic2">
-        <img src="../assets/images/example1.jpg" alt="Mobile PlaceHolder" class="tallPic3">
-        <img src="../assets/images/example2.png" alt="Desktop PlaceHolder" class="widePic1">
-        <img src="../assets/images/example2.png" alt="Desktop PlaceHolder" class="widePic2">
+        <img src="../assets/images/example1.jpg" alt="Mobile PlaceHolder" class="tallPic1 roundedCornerPic">
+        <img src="../assets/images/example1.jpg" alt="Mobile PlaceHolder" class="tallPic2 roundedCornerPic">
+        <img src="../assets/images/example1.jpg" alt="Mobile PlaceHolder" class="tallPic3 roundedCornerPic">
+        <img src="../assets/images/example2.png" alt="Desktop PlaceHolder" class="widePic1 roundedCornerPic">
+        <img src="../assets/images/example2.png" alt="Desktop PlaceHolder" class="widePic2 roundedCornerPic">
     </div>
 </template>
 
