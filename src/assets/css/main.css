@@ -33,7 +33,7 @@
 /*** ANIMATIONS ******/
 .slide0-enter-active {
     animation: coming0 .5s;
-    animation-delay: .5s;
+    animation-delay: .2s;
     opacity: 0;
 }
 .slide0-leave-active {
@@ -61,7 +61,7 @@
 }
 .slide1-enter-active {
     animation: coming1 .5s;
-    animation-delay: .5s;
+    animation-delay: .2s;
     opacity: 0;
 }
 .slide1-leave-active {
