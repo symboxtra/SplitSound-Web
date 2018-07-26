@@ -33,11 +33,11 @@
     }
 
     .btn-main {
-        font-size: 30px;
+        font-size: 30px !important;
     }
 
     h1 {
-        font-size: 50px;
+        font-size: 50px !important;
     }
 
     p {
@@ -84,11 +84,11 @@
     }
 
     .btn-main {
-        font-size: 40px;
+        font-size: 40px !important;
     }
 
     h1 {
-        font-size: 60px;
+        font-size: 60px !important;
     }
 
     p {

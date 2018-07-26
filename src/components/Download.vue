@@ -3,7 +3,7 @@
         <div class="downloadSection">
             <h1>Get SplitSound for {{ OSName }} </h1>
             <p>SplitSound is Symboxtra's revolutionary flagship audio sharing product. Get it now!</p>
-            <button class="btn btn-dark btn-main">Download</button>
+            <b-btn class="btn-main btn-dark" size="lg">Download</b-btn>
         </div>
         <download-element class="downloadElement1" :osname="RenderedOSs[0]">
         </download-element>

@@ -41,7 +41,8 @@
     }
 
     h1 {
-        font-size: 50px;
+        font-size: 50px !important;
+        color: white !important;
     }
 
     p {

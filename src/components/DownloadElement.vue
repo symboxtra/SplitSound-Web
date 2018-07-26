@@ -2,7 +2,7 @@
     <div :class="{ android: OSName === 'Android', ios: OSName === 'iOS', linux: OSName === 'Linux', mac: OSName === 'Mac', windows: OSName === 'Windows'}">
         <div>
             <h1>{{ OSName }}</h1>
-            <button class="btn btn-dark btn-el">Download</button>
+            <b-btn class="downloadButton btn-dark" size="lg">Download</b-btn>
         </div>
         <img class="dImg" src="../assets/images/example2.png" alt="Desktop PlaceHolder"
              v-if="OSName === 'Linux' || OSName === 'Mac'|| OSName === 'Windows'">
@@ -25,7 +25,7 @@
 </script>
 
 <style scoped>
-    .btn {
+    .downloadButton {
         font-size: 25px;
     }
 

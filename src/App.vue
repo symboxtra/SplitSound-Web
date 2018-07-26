@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="app">
         <navbar></navbar>
         <div class="main">
             <transition appear name="routerAnimation" :enter-active-class="enterAnimation"
@@ -16,7 +16,6 @@
     import Navbar from './components/Navbar'
     import Home from './components/Home'
     import Footer from './components/Footer'
-
     export default {
         data() {
             return {

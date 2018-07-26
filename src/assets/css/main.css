@@ -19,10 +19,12 @@
 
 .navbar {
     background-color: black;
+    margin: 0 !important;
+    padding-bottom: 0 !important;
 }
 
-.navbar .navbar-nav li a{
+.navbar .navbar-nav > li > a {
     color: var(--splitSoundOrange) !important;
     font-size: 20px !important;
-    font-family: var(--fonts);;
+    font-family: var(--fonts);
 }
