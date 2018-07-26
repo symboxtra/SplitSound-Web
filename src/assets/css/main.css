@@ -30,6 +30,10 @@
     font-family: var(--fonts);
 }
 
+.websiteTitle{
+    font-size: 25px !important;
+}
+
 /*** ANIMATIONS ******/
 .slide0-enter-active {
     animation: coming0 .5s;
