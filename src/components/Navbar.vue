@@ -1,8 +1,8 @@
 <template>
     <div>
-        <b-navbar toggleable="md" type="dark" variant="black">
+        <b-navbar toggleable="md" type="dark" variant="black" v-click-outside="onClickOutside">
             <b-navbar-brand to="home" class="websiteTitle">SplitSound</b-navbar-brand>
-            <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
+            <b-navbar-toggle target="nav_collapse" id="navbar-collapse"></b-navbar-toggle>
             <b-collapse is-nav id="nav_collapse">
                 <b-navbar-nav class="ml-auto">
                     <b-nav-item to="home">Home</b-nav-item>
@@ -19,7 +19,11 @@
 <script>
     export default {
         name: "Navbar",
-        methods: {}
+        methods: {
+            onClickOutside (event) {
+
+            }
+        }
     }
 </script>
 

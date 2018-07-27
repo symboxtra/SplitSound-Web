@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "animate.css": "^3.6.1",
+    "v-click-outside": "^1.0.5",
     "vue": "^2.5.16",
     "vue-router": "^3.0.1",
     "vuetify": "^1.0.19",
