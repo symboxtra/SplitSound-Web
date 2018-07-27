@@ -8,7 +8,9 @@
                 <router-view>
                 </router-view>
             </transition>
-            <footerComp></footerComp>
+            <footerComp>
+
+            </footerComp>
         </div>
     </div>
 </template>
