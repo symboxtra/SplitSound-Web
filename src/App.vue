@@ -2,14 +2,11 @@
     <div id="app">
         <navbar></navbar>
         <div class="main">
-            <!--<transition appear name="routerAnimation" :enter-active-class="enterAnimation"-->
-            <!--:leave-active-class="exitAnimation" mode="out-in">-->
             <transition :name="animationName">
                 <router-view>
                 </router-view>
             </transition>
             <footerComp>
-
             </footerComp>
         </div>
     </div>

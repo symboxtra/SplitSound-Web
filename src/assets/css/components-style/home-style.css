@@ -1,61 +1,38 @@
-h1 {
+h1{
     color: white !important;
 }
-
+.intro-text{
+    text-align: center;
+}
 @media (min-width: 300px) {
-    .gridWrapper {
+    .home-grid-wrapper{
         display: grid;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 5fr 2fr 5fr;
         justify-items: center;
-        text-align: center;
+        grid-template-areas: "ai" "di" "ii"
     }
-
-    .introText {
-        text-align: center;
-    }
-
-    .carousel {
-        height: 100%;
-    }
-
-    .responsiveMImg{
-    padding: 0 35%;
-    }
-
-    .responsiveImg {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        min-width: 100%;
-        will-change: transform;
-        transition: inherit;
+    .responsive-img{
         max-width: 100%;
         max-height: 100%;
-        padding-bottom: 5%;
-        border-radius: 5px;
+    }
+    #android-img{
+        padding: 15%;
+        grid-area: ai;
+    }
+    #ios-img{
+        padding: 15%;
+        grid-area: ii;
+    }
+    #desktop-img{
+        padding: 0 5%;
+        grid-area: di;
     }
 }
 
-@media (min-width: 900px) {
-    .gridWrapper {
-        height: 100vh;
-        grid-template-rows: 1fr 2fr;
-    }
+@media (min-width: 800px) {
+
 }
 
 @media (min-width: 1400px) {
-    .gridWrapper {
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-areas: ". it it it . " ". bc bc bc .";
-    }
 
-    .carousel {
-        grid-area: bc;
-    }
-
-    .introText {
-        grid-area: it;
-    }
 }

@@ -1,7 +1,7 @@
 <template>
     <div>
         <b-navbar toggleable="md" type="dark" variant="black" v-click-outside="onClickOutside">
-            <b-navbar-brand to="home" class="websiteTitle">SplitSound</b-navbar-brand>
+            <b-navbar-brand to="home" class="website-title">SplitSound</b-navbar-brand>
             <b-navbar-toggle target="nav_collapse" id="navbar-collapse"></b-navbar-toggle>
             <b-collapse is-nav id="nav_collapse">
                 <b-navbar-nav class="ml-auto">

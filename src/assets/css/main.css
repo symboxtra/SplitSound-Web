@@ -13,7 +13,7 @@
     height: 100%;
     width: 100%;
     position: relative;
-    padding-top: 4%;
+    padding-top: 2%;
     overflow-x: hidden;
 }
 
@@ -30,7 +30,7 @@
     font-family: var(--fonts);
 }
 
-.websiteTitle{
+.website-title{
     font-size: 25px !important;
 }
 
