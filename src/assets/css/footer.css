@@ -38,3 +38,15 @@ hr {
     height: 1px;
     border: 0;
 }
+
+/*TEMP CSS PROPERTIES TILL WE FIGURE OUT WHAT WE WANT THERE*/
+.footerHead:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+.footerElement:hover {
+    color: orangered;
+    cursor: pointer;
+}
+

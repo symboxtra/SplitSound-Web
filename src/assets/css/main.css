@@ -26,6 +26,68 @@
 .navbar .navbar-nav > li > a {
     color: var(--splitSoundOrange) !important;
     font-size: 20px !important;
-    width: fit-content;
+    text-align: center;
     font-family: var(--fonts);
+}
+
+.websiteTitle{
+    font-size: 25px !important;
+}
+
+/*** ANIMATIONS ******/
+.slide0-enter-active {
+    animation: coming0 .5s;
+    animation-delay: .5s;
+    opacity: 0;
+}
+.slide0-leave-active {
+    animation: going0 .5s;
+}
+
+@keyframes going0 {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+@keyframes coming0 {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.slide1-enter-active {
+    animation: coming1 .5s;
+    animation-delay: .5s;
+    opacity: 0;
+}
+.slide1-leave-active {
+    animation: going1 .5s;
+}
+
+@keyframes going1 {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+@keyframes coming1 {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }

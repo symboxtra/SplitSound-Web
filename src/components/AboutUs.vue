@@ -19,7 +19,7 @@
         },
         data(){
             return{
-                userList: ['emanuel', 'jack', 'neel', 'aneesh', 'charlene', 'davis']
+                userList: ['aneesh', 'charlene', 'davis','emanuel', 'jack', 'neel']
             }
         }
     }
