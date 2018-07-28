@@ -8,7 +8,7 @@
 
 .main {
     font-family: var(--fonts);
-    background: linear-gradient(black, #303030, black);
+    background: repeating-linear-gradient(black, #252525 500px, black 1000px);
     background-size: cover;
     height: 100%;
     width: 100%;
