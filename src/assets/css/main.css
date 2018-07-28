@@ -30,6 +30,15 @@
     font-family: var(--fonts);
 }
 
+.navbar-dark .navbar-toggler{
+    border: none;
+    outline: none;
+}
+
+.navbar-dark .navbar-toggler{
+    color: white !important;
+}
+
 .website-title{
     font-size: 25px !important;
 }
