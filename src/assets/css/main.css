@@ -34,6 +34,11 @@
     font-size: 25px !important;
 }
 
+h1 {
+    font-size: 50px !important;
+    color: white !important;
+}
+
 /*** ANIMATIONS ******/
 .slide0-enter-active {
     animation: coming0 .5s;

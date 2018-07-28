@@ -1,29 +1,32 @@
 <template>
-    <div class="gridWrapper2">
-        <div class="downloadSection">
-            <h1>Get SplitSound for {{ OSName }} </h1>
+    <div>
+        <div class="download-section">
+            <h1>Get SplitSound for {{ OSName }}</h1>
             <p>SplitSound is Symboxtra's revolutionary flagship audio sharing product. Get it now!</p>
-            <b-btn class="btn-main btn-dark" size="lg">Download for {{ OSName }}</b-btn>
+            <b-btn class="btn-dark main-btn" size="lg">Download for {{ OSName }}</b-btn>
         </div>
-        <download-element class="downloadElement1" :osname="RenderedOSs[0]">
-        </download-element>
-        <download-element class="downloadElement2" :osname="RenderedOSs[1]">
-        </download-element>
-        <download-element class="downloadElement3" :osname="RenderedOSs[2]">
-        </download-element>
-        <download-element class="downloadElement4" :osname="RenderedOSs[3]">
-        </download-element>
+        <div class="download-flex-wrapper">
+            <download-element class="responsive-download-element" id="download-element-1" :osname="RenderedOSs[0]">
+            </download-element>
+            <download-element class="responsive-download-element" id="download-element-2" :osname="RenderedOSs[1]">
+            </download-element>
+            <download-element class="responsive-download-element" id="download-element-3" :osname="RenderedOSs[2]">
+            </download-element>
+            <download-element class="responsive-download-element" id="download-element-4" :osname="RenderedOSs[3]">
+            </download-element>
+        </div>
     </div>
 </template>
 
 <script>
     import DownloadElement from "./DownloadElement"
+
     export default {
         name: "Download",
         data() {
             return {}
         },
-        components:{
+        components: {
             DownloadElement
         },
         computed: {
@@ -31,7 +34,7 @@
                 return this.getOS();
             },
             RenderedOSs() {
-                let osa = ['Windows','Mac','Linux','Android','iOS'];
+                let osa = ['Windows', 'Mac', 'Linux', 'Android', 'iOS'];
                 let i = osa.indexOf(this.getOS());
                 if (i !== -1) {
                     osa.splice(i, 1);
