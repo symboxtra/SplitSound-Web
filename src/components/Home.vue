@@ -6,9 +6,11 @@
             <p> A free alternative to wireless bluetooth wifi 2.4 ghz headphones.</p>
         </div>
         <div class="home-grid-wrapper">
-            <img src="../assets/images/example1.jpg" alt="Android PlaceHolder" id="android-img" class="responsive-img">
-            <img src="../assets/images/example2.png" alt="Desktop PlaceHolder" id="desktop-img" class="responsive-img">
-            <img src="../assets/images/example1.jpg" alt="iOS PlaceHolder" id="ios-img" class="responsive-img">
+            <img src="../assets/images/example1.jpg" alt="Android PlaceHolder" class="responsive-img"
+                 id="android-img">
+            <img src="../assets/images/example2.png" alt="Desktop PlaceHolder" class="responsive-img"
+                 id="desktop-img">
+            <img src="../assets/images/example1.jpg" alt="iOS PlaceHolder" class="responsive-img" id="ios-img">
         </div>
         <!--<v-carousel class="carousel">-->
         <!--<v-carousel-item>-->
