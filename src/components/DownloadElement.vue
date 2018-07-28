@@ -45,30 +45,35 @@
     .android {
         background-color: #A4C639;
         opacity: .7;
+        box-shadow: 5px 5px 3px mediumseagreen;
         /*android green*/
     }
 
     .ios {
         background-color: #8E8E93;
         opacity: .7;
+        box-shadow: 5px 5px 3px grey;
         /*ios gray*/
     }
 
     .linux {
         background-color: #DAA520;
         opacity: .7;
+        box-shadow: 5px 5px 3px lightyellow;
         /*could not find one for linux*/
     }
 
     .mac {
         background-color: #8E8E91;
         opacity: .7;
+        box-shadow: 5px 5px 3px grey;
         /*mac gray*/
     }
 
     .windows {
         background-color: #2D89EF;
         opacity: .7;
+        box-shadow: 5px 5px 3px lightblue;
         /*Windows 10 blue*/
     }
 </style>
