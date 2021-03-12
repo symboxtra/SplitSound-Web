@@ -1,0 +1,34 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout ${{ github.branch }}
+        uses: actions/checkout@v2
+
+      - name: Setup Node using nvm
+        shell: bash -l {0}
+        run: nvm install --lts
+
+      - name: Install packages
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: crazy-max/ghaction-github-pages@v2.2.0
+        with:
+          fqdn: splitsound.tk
+          target_branch: gh-pages-deploy
+          keep_history: false
+          allow_empty_commit: false
+          build_dir: dist
