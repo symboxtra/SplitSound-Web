@@ -33,3 +33,6 @@ jobs:
           keep_history: false
           allow_empty_commit: false
           build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+
