@@ -28,6 +28,7 @@ jobs:
         with:
           fqdn: splitsound.tk
           target_branch: gh-pages-deploy
+          author: Symboxtra Bot <dev.symboxtra@gmail.com>
           committer: Symboxtra Bot <dev.symboxtra@gmail.com>
           keep_history: false
           allow_empty_commit: false
